@@ -29,6 +29,9 @@
     rgba(13, 13, 13, 0.72) 40%,
     rgba(13, 13, 13, 0.35) 100%
   );
+}
+
+:global(html:not(.hero-played)) .heroBgOverlay {
   opacity: 0;
 }
 
@@ -62,6 +65,10 @@
 .heroLine1,
 .heroLine2 {
   display: block;
+}
+
+:global(html:not(.hero-played)) .heroLine1,
+:global(html:not(.hero-played)) .heroLine2 {
   opacity: 0;
   transform: translateY(24px);
 }
@@ -73,6 +80,9 @@
 .heroInner :global(.sub-headline) {
   max-width: 600px;
   margin-bottom: 40px;
+}
+
+:global(html:not(.hero-played)) .heroInner :global(.sub-headline) {
   opacity: 0;
   transform: translateY(24px);
 }
@@ -81,6 +91,9 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+}
+
+:global(html:not(.hero-played)) .heroCta {
   opacity: 0;
   transform: translateY(24px);
 }
