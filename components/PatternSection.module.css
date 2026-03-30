@@ -1,0 +1,69 @@
+.headline {
+  margin-bottom: 0;
+}
+
+/* 4-column card grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+/* Periodic table element card */
+.card {
+  position: relative;
+  padding: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  background: var(--bg-card-alt);
+  display: flex;
+  flex-direction: column;
+  aspect-ratio: 1 / 1;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  border-color: var(--accent);
+  box-shadow: 0 0 20px rgba(201, 58, 42, 0.08);
+}
+
+/* Atomic number — top left */
+.cardNum {
+  font-family: var(--font-display);
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--accent);
+  letter-spacing: 0.02em;
+}
+
+/* Title */
+.cardSymbol {
+  font-family: var(--font-display);
+  font-size: clamp(22px, 2.8vw, 28px);
+  font-weight: 700;
+  color: var(--text-headline);
+  line-height: 1.15;
+  padding-top: 32px;
+  margin-bottom: 12px;
+}
+
+/* Description */
+.cardDesc {
+  font-family: var(--font-body);
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--text-secondary);
+  letter-spacing: 0.01em;
+}
+
+@media (max-width: 1024px) {
+  .grid { grid-template-columns: repeat(2, 1fr); }
+  .card { aspect-ratio: auto; min-height: 260px; }
+  .cardSymbol { font-size: 24px; }
+}
+
+@media (max-width: 767px) {
+  .grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+  .card { padding: 20px; min-height: 220px; }
+  .cardSymbol { font-size: 20px; }
+}

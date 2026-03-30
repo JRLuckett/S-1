@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>S-1 Brand Palette — Proposed</title>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: #0D0D0D; color: #fff; font-family: 'Inter', sans-serif; padding: 60px 40px; }
+h1 { font-family: 'Outfit', sans-serif; font-size: 32px; margin-bottom: 48px; font-weight: 600; }
+.row { display: flex; gap: 32px; margin-bottom: 64px; flex-wrap: wrap; }
+.card { width: 280px; }
+.swatch { width: 100%; height: 160px; border-radius: 12px; margin-bottom: 16px; display: flex; align-items: flex-end; padding: 16px; }
+.swatch span { font-family: 'JetBrains Mono', monospace; font-size: 14px; opacity: 0.9; }
+.label { font-family: 'Outfit', sans-serif; font-size: 18px; font-weight: 600; margin-bottom: 4px; }
+.desc { font-size: 13px; color: #9CA3AF; line-height: 1.5; }
+h2 { font-family: 'Outfit', sans-serif; font-size: 22px; margin-bottom: 24px; font-weight: 600; color: #9CA3AF; }
+.demo { padding: 40px; border-radius: 12px; margin-bottom: 32px; }
+.demo-dark { background: #0D0D0D; border: 1px solid #222; }
+.demo h3 { font-family: 'Outfit', sans-serif; font-size: 48px; font-weight: 600; line-height: 1.1; margin-bottom: 16px; }
+.demo p { font-size: 16px; line-height: 1.6; max-width: 560px; color: #D1D5DB; margin-bottom: 16px; }
+.btn { display: inline-block; padding: 14px 28px; border-radius: 6px; font-family: 'Outfit', sans-serif; font-size: 14px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; border: none; cursor: pointer; margin-right: 12px; margin-bottom: 12px; }
+.stat { display: inline-block; padding: 8px 16px; border-radius: 6px; font-family: 'JetBrains Mono', monospace; font-size: 14px; margin-right: 12px; margin-bottom: 12px; }
+</style>
+</head>
+<body>
+
+<h1>S-1 Brand Palette — Proposed Refinement</h1>
+
+<!-- Swatches -->
+<div class="row">
+  <div class="card">
+    <div class="swatch" style="background: #C93A2A;"><span style="color: #fff;">#C93A2A</span></div>
+    <div class="label">Primary</div>
+    <div class="desc">CTAs, headline accents, logo, scribble underlines. 4.6:1 contrast on dark.</div>
+  </div>
+  <div class="card">
+    <div class="swatch" style="background: #8C2418;"><span style="color: #fff;">#8C2418</span></div>
+    <div class="label">Secondary</div>
+    <div class="desc">Hover states, card borders, section rules, subtle warmth. Clear separation from Primary.</div>
+  </div>
+  <div class="card">
+    <div class="swatch" style="background: #2E5D6B;"><span style="color: #fff;">#2E5D6B</span></div>
+    <div class="label">Tertiary</div>
+    <div class="desc">Data metrics, evidence accents, credibility moments. The "objectivity" color.</div>
+  </div>
+  <div class="card">
+    <div class="swatch" style="background: #4B4B4B;"><span style="color: #fff;">#4B4B4B</span></div>
+    <div class="label">Neutral</div>
+    <div class="desc">Borders, dividers, muted micro-copy, input fields.</div>
+  </div>
+</div>
+
+<!-- Usage: Headlines -->
+<h2>Headlines on Dark Background</h2>
+<div class="demo demo-dark">
+  <h3 style="color: #fff;">Growth is the goal.<br><span style="color: #C93A2A;">It can also be the trap.</span></h3>
+  <p>If every available hour goes to this quarter's number, the sales foundation that would make the next quarter repeatable, and the next hire successful, keeps getting deferred. <strong style="color: #fff;">That's the trap.</strong></p>
+</div>
+
+<!-- Usage: Buttons -->
+<h2>Buttons & CTAs</h2>
+<div class="demo demo-dark">
+  <button class="btn" style="background: #C93A2A; color: #fff;">See where the gaps are →</button>
+  <button class="btn" style="background: #8C2418; color: #fff;">Hover / Pressed State</button>
+  <button class="btn" style="background: transparent; color: #C93A2A; border: 1.5px solid #C93A2A;">GTM Healthcheck</button>
+</div>
+
+<!-- Usage: Data Stats -->
+<h2>Data & Metrics (Tertiary)</h2>
+<div class="demo demo-dark">
+  <span class="stat" style="background: rgba(46,93,107,0.2); color: #2E5D6B; border: 1px solid rgba(46,93,107,0.3);">73% of founders</span>
+  <span class="stat" style="background: rgba(46,93,107,0.2); color: #2E5D6B; border: 1px solid rgba(46,93,107,0.3);">4.2x pipeline</span>
+  <span class="stat" style="background: rgba(46,93,107,0.2); color: #2E5D6B; border: 1px solid rgba(46,93,107,0.3);">90-day engagement</span>
+  <p style="margin-top: 16px;">Teal signals data and objectivity — distinct from the red "action" moments.</p>
+</div>
+
+<!-- Side by side comparison -->
+<h2>Current vs Proposed (Primary Red)</h2>
+<div class="row">
+  <div class="card">
+    <div class="swatch" style="background: #B2210D;"><span style="color: #fff;">#B2210D — Current</span></div>
+    <div class="desc">Darker, lower contrast (3.4:1). Harder to read on dark backgrounds.</div>
+  </div>
+  <div class="card">
+    <div class="swatch" style="background: #C93A2A;"><span style="color: #fff;">#C93A2A — Proposed</span></div>
+    <div class="desc">Brighter, better contrast (4.6:1). Same red family, more legible.</div>
+  </div>
+</div>
+
+</body>
+</html>

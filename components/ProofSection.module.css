@@ -1,0 +1,10 @@
+.proof { padding-top: 0; }
+.headline { margin-bottom: 16px; }
+.sub { margin-bottom: 48px; max-width: 720px; }
+.grid { }
+.card { display: flex; flex-direction: column; gap: 8px; }
+.company { font-family: var(--font-body); font-size: 12px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-muted); }
+.stage { font-family: var(--font-body); font-size: 11px; color: var(--text-secondary); }
+.number { font-size: clamp(28px, 3vw, 40px); color: var(--accent); line-height: 1; margin: 8px 0; }
+.mechanism { line-height: 1.6; }
+.cta { display: inline-block; margin-top: 40px; }

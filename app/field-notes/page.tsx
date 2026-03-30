@@ -1,0 +1,1 @@
+export default function Page() { return <main style={{minHeight:'100vh',display:'flex',alignItems:'center',justifyContent:'center',background:'#0D0D0D',color:'#fff'}}><h1>field-notes — Coming Soon</h1></main>; }

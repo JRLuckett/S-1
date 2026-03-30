@@ -1,0 +1,7 @@
+.headline { margin-bottom: 48px; }
+.grid { }
+.card { text-align: left; background: var(--bg-card-alt); border: 1px solid rgba(255, 255, 255, 0.12); border-radius: 12px; }
+.statWrap { position: relative; display: inline-block; margin-bottom: 12px; }
+.stat { font-size: clamp(36px, 4vw, 52px); line-height: 1; }
+.scribbleCircle { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 130%; height: 130%; pointer-events: none; }
+.context { font-family: var(--font-body); font-size: 14px; color: var(--text-secondary); letter-spacing: 0.01em; line-height: 1.5; margin-bottom: 8px; }

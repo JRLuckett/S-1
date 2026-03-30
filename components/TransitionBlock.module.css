@@ -1,0 +1,57 @@
+.section {
+  padding: 100px 0;
+}
+
+.text {
+  font-family: var(--font-body);
+  font-size: clamp(18px, 2vw, 22px);
+  color: var(--text-body);
+  line-height: 1.7;
+  text-align: left;
+  max-width: 740px;
+  margin: 0 auto;
+}
+
+.qualifier {
+  font-family: var(--font-display);
+  font-size: clamp(24px, 3vw, 32px);
+  color: var(--text-headline);
+  line-height: 1.4;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto 48px;
+  padding: 0 24px;
+  font-weight: 500;
+}
+
+.trap {
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.boldWhite {
+  color: var(--text-headline);
+  font-weight: 700;
+}
+
+.emphasis {
+  color: var(--text-headline);
+  font-weight: 700;
+  position: relative;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.underline {
+  position: absolute;
+  bottom: -4px;
+  left: -2px;
+  width: calc(100% + 4px);
+  height: 12px;
+}
+
+@media (max-width: 767px) {
+  .section {
+    padding: 64px 0;
+  }
+}

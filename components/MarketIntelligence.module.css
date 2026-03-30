@@ -1,0 +1,13 @@
+.section { padding-top: 0; }
+.section .structural-line { margin-bottom: var(--section-pad-y); }
+.layout { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: start; }
+.headline { margin-bottom: 16px; }
+.sub { margin-bottom: 0; max-width: 420px; }
+.stats { display: flex; flex-direction: column; gap: 16px; }
+.card { text-align: left; background: var(--bg-card-alt); padding: 28px 24px; border: 1px solid rgba(255, 255, 255, 0.12); border-radius: 12px; }
+
+.number { font-size: clamp(40px, 4vw, 56px); margin-bottom: 12px; line-height: 1; }
+.symbol { color: var(--accent); }
+.context { font-family: var(--font-body); font-size: 13px; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 0.08em; line-height: 1.5; }
+.copy { }
+@media (max-width: 767px) { .layout { grid-template-columns: 1fr; gap: 40px; } }

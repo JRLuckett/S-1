@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 100" fill="none">
+  <!-- Logo 3: Horizontal wordmark "S-1 VENTURES" -->
+  <!-- "S-1" bold -->
+  <text x="0" y="78" font-family="Outfit, sans-serif" font-weight="700" font-size="88" fill="#C0392B">S-1</text>
+  <!-- "VENTURES" lighter weight -->
+  <text x="245" y="78" font-family="Outfit, sans-serif" font-weight="300" font-size="88" fill="#C0392B" letter-spacing="0.06em">VENTURES</text>
+</svg>
